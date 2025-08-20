@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mario lite</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <canvas id="game" width="1280" height="720" aria-label="Mario-lite"></canvas>
+        <div class="hud" id="hud">
+            <div class="pill accent">World <span id="world">1-1</span></div>
+            <div class="pill">Score: <span id="score">0</span></div>
+            <div class="pill">Coins: <span id="coins">0</span>/<span id="coinTotal">0</span></div>
+            <div class="pill good">Lives: <span id="lives">3</span></div>
+            <div class="pill warn">Ammo: <span id="ammo">0</span></div>
+            <div class="pill">FPS: <span id="fps">60</span></div>
+            <div class="pill">Controls: <kbd>←</kbd><kbd>→</kbd> move · <kbd>Space/W/↑</kbd> jump · <kbd>F</kbd>
+                shoot · <kbd>R</kbd> restart</div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="card">
+            <h1>🎮 Mario lite</h1>
+            <p>Run, jump, collect coins, and defeat enemies. Grab a <strong>Lucky Coin</strong> to gain ammo and
+                <strong>shoot</strong> with <kbd>F</kbd>. Reach the flag to advance through <strong>3
+                    levels</strong>.
+            </p>
+            <p><strong>Controls</strong>: <kbd>←</kbd><kbd>→</kbd> move ·
+                <kbd>Space</kbd>/<kbd>W</kbd>/<kbd>↑</kbd> jump · <kbd>F</kbd> shoot · <kbd>R</kbd> restart
+            </p>
+            <div class="row"><button id="play">Start Game</button><button id="how">Show Controls</button></div>
+            <p class="footer">Tip: Stomp enemies from above or blast them. Falling costs a life.</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
